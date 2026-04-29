@@ -8,7 +8,7 @@ jobs:
     - name: "Checkout"
       uses: "actions/checkout@v6"
     - name: "Build image"
-      uses: "RadxaOS-SDK/rsdk/.github/actions/build@main"
+      uses: "wheaney/rsdk/.github/actions/build@main"
       with:
         edition: "${{ matrix.edition }}"
         github-token: "${{ secrets.GITHUB_TOKEN }}"
@@ -46,7 +46,7 @@ jobs:
         product: "rock-4c-plus"
     - id: "query"
       name: "Query product info"
-      uses: "RadxaOS-SDK/rsdk/.github/actions/query@main"
+      uses: "wheaney/rsdk/.github/actions/query@main"
       with:
         product: "rock-4c-plus"
     - id: "release"
